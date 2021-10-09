@@ -1,17 +1,20 @@
+# About This Repository
+This is a fork of the original Microsoft.SyndicationFeed.ReadWriter repository. This project has been updated to support .Net 5 instead of the older .Net Standard. Some code changes have been made to support .Net 5, but overall the functionality should be unaffected. All of the original tests are passing at this time.
+
 # Microsoft.SyndicationFeed.ReaderWriter
 Microsoft.SyndicationFeed.ReaderWriter provides lightweight forward-only read/write APIs (similar to .NET XmlReader) to simplify operations with RSS 2.0 ([spec](http://cyber.harvard.edu/rss/rss.html)) and Atom ([spec](https://tools.ietf.org/html/rfc4287)) syndication feeds. It offers extensiblity to support custom feed elements and formatting. The workflow is async on demand, which enables this library to be used on syndication feeds of arbitrary size or stream latency.
 
 ### Requirements:
-* [Visual Studio 2017](https://www.visualstudio.com/vs/whatsnew/)
+* [Visual Studio 2019](https://www.visualstudio.com/vs/whatsnew/)
 
 ### Supports:
-* .NET Standard 1.3
+* .NET 5
 
 ### Building:
-* The solution will build in Visual Studio 2017 after cloning.
+* The solution will build in Visual Studio 2019 after cloning.
 
 ### Running Tests:
-* Open the solution in Visual Studio 2017.
+* Open the solution in Visual Studio 2019.
 * Build the Tests project.
 * Open the Test Explorer and click "Run All" or run each test individually.
 
