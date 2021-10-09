@@ -43,6 +43,7 @@ namespace Microsoft.SyndicationFeed
 
         private static bool TryParseDateRssSpec(string value, out DateTimeOffset result)
         {
+            result = DateTimeOffset.MinValue;
             if (string.IsNullOrEmpty(value))
             {
                 return false;
@@ -231,6 +232,7 @@ namespace Microsoft.SyndicationFeed
 
         private static bool TryParseDateRfc3339(string dateTimeString, out DateTimeOffset result)
         {
+            result = DateTimeOffset.MinValue;
             const string Rfc3339LocalDateTimeFormat = "yyyy-MM-ddTHH:mm:sszzz";
             const string Rfc3339UTCDateTimeFormat = "yyyy-MM-ddTHH:mm:ssZ";
 
